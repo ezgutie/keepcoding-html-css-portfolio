@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ezequiel Gutiérrez - Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header con navegación  -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Ezequiel Gutiérrez</h1>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#banner">Inicio</a></li>
+                    <li><a href="#about">Sobre mí</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                    <li><a href="projects.html">Proyectos</a></li>
+                    <li><a href="video.html">Video</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+        <!-- Banner principal  -->
+        <section id="banner">
+            <div class="banner-content">
+                <h2>Consultor Odoo & Desarrollador en Formación</h2>
+                <p>Transformando procesos de negocio con tecnología</p>
+            </div>
+        </section>
+
+        <!-- Sobre mi  -->
+        <section id="about">
+            <div class="container">
+                <h2>Sobre mí</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Soy Ezequiel Gutiérrez, consultor especializado en implementaciones de Odoo con más de 2 años de experiencia. Me enfoco en entender los procesos de negocio de cada cliente para traducirlos en soluciones tecnológicas efectivas.</p>
+                        <p>Actualmente estoy ampliando mis habilidades técnicas a través del Full Stack Web Bootcamp de KeepCoding para participar en proyectos de transformación digital de forma integral.</p>
+                    </div>
+                    <div class="skills">
+                        <h3>Mis habilidades</h3>
+                        <div class="skill-item">
+                            <span class="skill-name">Análisis de Procesos</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Implementación Odoo</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Gestión de Proyectos</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Python & APIs</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="50"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">HTML & CSS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="60"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formulario de contacto -->
+        <section id="contact">
+            <div class="container">
+                <h2>Contacto</h2>
+                <form class="contact-form" method="post" action="#">
+                    <div class="form-group">
+                        <label for="nombre">Nombre *</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="apellidos">Apellidos *</label>
+                        <input type="text" id="apellidos" name="apellidos" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="telefono">Teléfono *</label>
+                        <input type="tel" id="telefono" name="telefono" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>¿Cómo me conociste? *</label>
+                        <div class="radio-group">
+                            <input type="radio" id="universidad" name="conocimiento" value="universidad" required>
+                            <label for="universidad">Universidad</label>
+                            
+                            <input type="radio" id="keepcoding" name="conocimiento" value="keepcoding" required>
+                            <label for="keepcoding">Keepcoding kick-off</label>
+                            
+                            <input type="radio" id="colegio" name="conocimiento" value="colegio" required>
+                            <label for="colegio">Colegio</label>
+                            
+                            <input type="radio" id="github" name="conocimiento" value="github" required>
+                            <label for="github">En Github</label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="github-tag">Tag de Github</label>
+                        <input type="text" id="github-tag" name="github-tag" pattern="^@[^\s]+" placeholder="@username">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje *</label>
+                        <textarea id="mensaje" name="mensaje" maxlength="180" required placeholder="Cuéntame más sobre tu proyecto..."></textarea>
+                        <small>Máximo 180 caracteres</small>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        <label for="newsletter">Quiero acceso a la newsletter</label>
+                    </div>
+                    
+                    <div class="form-buttons">
+                        <button type="submit">Enviar</button>
+                        <button type="reset">Reset</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Ezequiel Gutiérrez - Portfolio</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/ezgutie/" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="https://github.com/ezgutie" target="_blank" rel="noopener">GitHub</a>
+                <a href="mailto:ezgutie@gmail.com">Email</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
