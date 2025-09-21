@@ -58,7 +58,7 @@ header .container {
 
 /* Banner */
 #banner {
-    background-image: url('img/banner-desktop.png');
+    background-image: url('../img/banner-desktop.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -451,7 +451,7 @@ footer .container {
     }
     
     #banner {
-        background-image: url('img/banner-mobile.jpg');
+        background-image: url('../img/banner-mobile.jpg');
     }
     
     .projects-grid {
